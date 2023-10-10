@@ -1,0 +1,40 @@
+Real-world Conduit : 
+Design API
+1. API Login : 
+	+ username 
+	+ password
+	+ token
+2. APi Register :
+	+ username
+	+ password
+	+ email
+3. API Tags :
+ 	+ array : { [many content] }
+4. API Articles : 
+{
+    "articles": [
+        {
+            "slug": 
+            "title": 
+            "description": 
+            "body": 
+            "tagList": [
+                "voluptate",
+                "rerum",
+                "ducimus",
+                "hic"
+            ],
+            "createdAt": 
+            "updatedAt": 
+            "favorited": 
+            "favoritesCount": 
+            "author": {
+                "username": 
+                "bio": 
+                "image": "
+                "following"
+            }
+        }
+       
+    "articlesCount"
+}

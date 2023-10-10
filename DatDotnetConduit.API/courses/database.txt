@@ -1,0 +1,47 @@
+Code first
+tạo class model -> ánh xạ tạo DB
+
+Ưu điểm:
+- Không cần nhớ câu lệnh SQL
+- Tạo nhanh hơn
+- Migration -> Tracking history -> Dễ dàng revert
+
+Khuyết điểm:
+- Tận dụng DB đã cũ
+
+
+Database first
+
+Tạo DB tạo SQL -> ánh xạ tạo model (entity) (class User, ) 
+
+Ưu điểm
+- Tận dụng DB đã cũ
+- Làm mọi thứ dễ dàng với SQL
+- Phù hợp với dự án cần optimize về Database
+
+
+Khuyết điểm:
+- Yêu cấu kiến thức về SQL
+- Ko Tracking history -> thay đổi Database -> khó revert
+
+
+Clean Architecture: UI(API), Application, Domain, Infrastructure
+
+Các bước code first
+1. định nghĩa entity (models) (Domain)
+2. Config Connect DB Infrastructure
+3. Tạo Migration (Infrastructure)
+
+
+C# reference type: string, các class => nhận giá trị null
+var a = 'reference type' // a -> địa chỉ #xxxx ('reference type') -> xóa #xxxx(null)
+-> nullable
+
+value type: number, boolean => ko nhận giá trị null
+var a = 5 -> xóa -> a ko chứa gì hết -> loại bỏ a khỏi bộ nhớ
+
+int? x = null
+
+.net 6 => bắt buộc a muốn nullable -> ?
+
+
